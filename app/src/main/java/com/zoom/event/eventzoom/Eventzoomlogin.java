@@ -36,7 +36,6 @@ public class Eventzoomlogin extends AppCompatActivity {
             public void onClick(View view) {
                 email = edt_email.getText().toString();
                 pass = edt_pass.getText().toString();
-
                 String loginurl = "https://eventzoom-194221.appspot.com/rest/api/signIn&"+email+"&"+pass;
                 new GetData().execute(loginurl);
             }
